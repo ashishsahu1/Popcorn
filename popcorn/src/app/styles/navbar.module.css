@@ -1,10 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+.container {
+    color: #fff;
+    font-family: 'Space Mono', monospace;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
 .navbar{
     height: 70px;
-    width: 100vw;
-    /* background-color: blueviolet; */
-    display: flex;
-    text-decoration: none;
-    
+    background-color: #151515;
+    position: relative;
 }
 
 .logo{
@@ -15,29 +27,95 @@
     width: 30%;
 }
 
+.logo h1{
+    font-size: 2rem;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.menuicon {
+    display: none;
+}
+
 .nav{
-    display: flex;
-    padding: 1rem;
-    width: 70%;
-    /* background-color: aquamarine; */
-    align-items: center;
+
 }
 .nav ul{
-    width: 100%;
     display: flex;
+    justify-content: space-between;
     list-style-type: none;
-    justify-content:flex-end;
-    align-items: center;
+}
+
+.nav ul li:not(:last-child){
+    margin-right: 60px;
 }
 
 .nav ul li{
-    padding: 1rem 2rem 1rem 2rem;
-    /* margin-left: 1rem; */
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #fff;
     text-decoration: none;
-    font-size: larger;
-    border-radius: 5px;
 }
 
-.nav ul li:hover{
-    background-color: rgb(248, 248, 248);
+.nav ul li.active {
+    color: #574c4c;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-elements ul a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #574c4c;
+}
+
+.lnk{
+    color: #fff;
+    
+}
+
+.lnk:hover{
+    color: #ffffffa6;
+}
+
+@media (max-width: 600px) {
+    .menuicon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav {
+        position: absolute;
+        right: 0;
+        top: 70px;
+        background-color: #c5900b;
+        width: 0px;
+        height: calc(100vh - 70px);
+        transition: all 0.3s ease-in;
+        overflow: hidden;
+    }
+
+    .active {
+        width: 70vw;
+    }
+
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav ul li:not(:last-child) {
+        margin-right: 0px;
+    }
+    
+    .nav ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: unset;
+        margin-top: 22px;
+    }
 }
