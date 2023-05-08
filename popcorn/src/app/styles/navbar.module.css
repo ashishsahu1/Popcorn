@@ -91,7 +91,7 @@
         position: absolute;
         right: 0;
         top: 70px;
-        background-color: #c5900b;
+        background-color: #151515;
         width: 0px;
         height: calc(100vh - 70px);
         transition: all 0.3s ease-in;
