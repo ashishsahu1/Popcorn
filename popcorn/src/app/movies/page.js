@@ -1,5 +1,6 @@
 import React from "react";
+import TitleSection from "../components/TitleSection";
 
 export default function page() {
-  return <div>This is Movie</div>;
+  return <><TitleSection/></>;
 }

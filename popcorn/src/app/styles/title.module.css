@@ -1,0 +1,19 @@
+.container{
+    width: 100vw;
+    height: 300px;
+    background-color: #ff008d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.container h1{
+    font-family: 'Press Start 2P', cursive;
+}
+
+@media (max-width: 400px){
+    .container{
+        font-size: 1.2rem;
+    }
+}

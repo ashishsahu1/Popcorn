@@ -20,6 +20,30 @@ export default function Header() {
     }
   };
 
+  function Menu() {
+    if (!showNav) {
+      console.log("hbclose")
+      return (
+        <Image
+          src="/hbopen.png"
+          alt="Toggle Menu"
+          width="25"
+          height="20"
+          unoptimized={true}
+        />
+      );
+    } else {
+      console.log("hbopen")
+      return <Image
+        src="/hbclose.png"
+        alt="Toggle Menu"
+        width="25"
+        height="20"
+        //unoptimized={true}
+      />
+    }
+  }
+
   return (
     <header className={styles.navbar}>
       <div className={styles.container}>
@@ -34,7 +58,7 @@ export default function Header() {
           <h1>popcorn</h1>
         </div>
         <div className={styles.menuicon} onClick={toggleNavItems}>
-          EE
+          <Menu />
         </div>
         <div className={getstyle()}>
           <ul>

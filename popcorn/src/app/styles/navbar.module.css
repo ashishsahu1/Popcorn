@@ -36,6 +36,10 @@
     display: none;
 }
 
+/* .menu{
+    display: none;
+} */
+
 .nav{
 
 }
@@ -119,3 +123,4 @@
         margin-top: 22px;
     }
 }
+
