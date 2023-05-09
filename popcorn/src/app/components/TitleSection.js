@@ -5,7 +5,7 @@ export default function TitleSection(props) {
   return (
     <>
         <div className={titleStyle.container}>
-            <h1>Movies</h1>
+            <h1>{props.ttl}</h1>
         </div>
     </>
   )

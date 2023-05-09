@@ -22,7 +22,7 @@ export default function Header() {
 
   function Menu() {
     if (!showNav) {
-      console.log("hbclose")
+      console.log("hbclose");
       return (
         <Image
           src="/hbopen.png"
@@ -33,14 +33,16 @@ export default function Header() {
         />
       );
     } else {
-      console.log("hbopen")
-      return <Image
-        src="/hbclose.png"
-        alt="Toggle Menu"
-        width="25"
-        height="20"
-        //unoptimized={true}
-      />
+      console.log("hbopen");
+      return (
+        <Image
+          src="/hbclose.png"
+          alt="Toggle Menu"
+          width="25"
+          height="20"
+          //unoptimized={true}
+        />
+      );
     }
   }
 
@@ -48,14 +50,9 @@ export default function Header() {
     <header className={styles.navbar}>
       <div className={styles.container}>
         <div className={styles.logo}>
-          {/* <Image
-            src="/logo.png"
-            alt="logo Image"
-            width="100"
-            height="35"
-            unoptimized={true}
-          /> */}
-          <h1>popcorn</h1>
+          <Link href="/">
+            <h1>popcorn</h1>
+          </Link>
         </div>
         <div className={styles.menuicon} onClick={toggleNavItems}>
           <Menu />

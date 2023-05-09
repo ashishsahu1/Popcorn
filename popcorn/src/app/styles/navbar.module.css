@@ -29,7 +29,13 @@
 
 .logo h1{
     font-size: 2rem;
+    color: #fff;
     font-family: 'Press Start 2P', cursive;
+    animation-duration: 5s;
+}
+
+.logo h1:hover{
+    color: #b6b1b1;
 }
 
 .menuicon {

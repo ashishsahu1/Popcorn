@@ -1,7 +1,10 @@
 import React from 'react'
+import TitleSection from '../components/TitleSection';
 
 export default function page() {
   return (
-    <div>THis is About</div>
-  )
+    <div>
+      <TitleSection ttl="About us" />
+    </div>
+  );
 }
