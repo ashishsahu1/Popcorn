@@ -1,5 +1,6 @@
 .main{
     font-family: 'Space Mono', monospace;
+    margin-bottom: 2rem;
 }
 
 .main .banner{
@@ -87,16 +88,16 @@
 
 .main .content .right .nameImg{
     width: 50vw;
-    height: 40vh;
+    height: 30vh;
     /* background-color: cadetblue; */
     position: relative;
-    margin-top: -5rem;
+    /* margin-top: -5rem; */
 }
 
 .main .content .right .bannerImg{
     position: relative;
     width: 60vw;
-    height: 50vh;
+    height: 60vh;
     margin-top: 2rem;
 }
 
