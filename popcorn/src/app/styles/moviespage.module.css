@@ -1,0 +1,159 @@
+.main{
+    font-family: 'Space Mono', monospace;
+}
+
+.main .banner{
+    height: 40vh;
+    width: 100vw;
+    background-size: cover;
+    
+}
+
+.main .banner{
+    /* padding: 1rem; */
+    display: flex;
+    line-height: 2;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6vw;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.main .banner h1{
+    text-align: center;
+
+}
+
+.main .content{
+    width: 100vw;
+    display: flex;
+}
+
+.main .content .left{
+    height: auto;
+    width: 30%;
+    /* background-color: beige; */
+    border-right: 2px;
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+
+.main .content .left p{
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.main .content .left .tags ul{
+    list-style-type: none;
+    display: flex;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.main .content .left .tags ul li{
+    margin-right: 1rem;
+    background-color: #ff008d;
+    /* border-radius: 10px; */
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
+
+.main .content .left .cast{
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.main .content .left .cast ul{
+    list-style-type: none;
+}
+
+
+
+
+.main .content .right {
+    height: 70vh;
+    width: 70%;
+    /* background-color: rgb(129, 208, 250); */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    
+}
+
+.main .content .right *{
+    
+}
+
+.main .content .right .nameImg{
+    width: 50vw;
+    height: 40vh;
+    /* background-color: cadetblue; */
+    position: relative;
+    margin-top: -5rem;
+}
+
+.main .content .right .bannerImg{
+    position: relative;
+    width: 60vw;
+    height: 50vh;
+    margin-top: 2rem;
+}
+
+.main .content .right .abt{
+    margin-top: 4rem;
+    padding-right: 3rem;
+
+}
+
+.main .content .right .abt p{
+    font-size: large;
+}
+
+
+
+@media (max-width: 900px){
+    .main .content{
+        flex-direction: column;
+    }
+
+    .main .content .right{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main .content .left{
+        width: 80%;
+    }
+
+    .main .content .right .nameImg{
+        width: 80vw;
+        height: 40vh;
+        /* background-color: cadetblue; */
+        /* margin-top: -5rem; */
+    }
+
+    .main .content .right .bannerImg{
+        width: 80vw;
+        height: 40vh;
+        margin-top: 2rem;
+    }
+
+    .main .content .right .abt p{
+        text-align: center;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 500px){
+    .main .content .right .nameImg{
+        margin-top: -2rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .main .content .right .nameImg {
+        margin-top: 0rem;
+    }
+}
