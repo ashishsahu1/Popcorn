@@ -9,7 +9,7 @@ export default function HeroSection() {
           <h3>Welcome to</h3>
           <h1>POPCORN</h1>
           <h5>One stop solution for all your movies reviews at one place</h5>
-          <h4>"Trust me our recommendations are the best"</h4>
+          <h4>Trust me our recommendations are the best</h4>
         </div>
       </div>
     </>
