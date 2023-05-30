@@ -69,11 +69,11 @@ export default function Header() {
                 Movies
               </Link>
             </li>
-            <li>
-              <Link href="/about" className={styles.lnk}>
-                About
+            {/* <li>
+              <Link href="/reviews" className={styles.lnk}>
+                Reviews
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

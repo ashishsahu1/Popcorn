@@ -4,7 +4,7 @@ import TitleSection from '../components/TitleSection';
 export default function page() {
   return (
     <div>
-      <TitleSection ttl="About us" />
+      <TitleSection ttl="Reviews" />
     </div>
   );
 }

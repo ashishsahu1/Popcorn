@@ -23,6 +23,7 @@ export default async function page({ params }) {
   const main_data = data[0].details;
   const genres = main_data.genres;
 
+  
 
   return (
     <>
